@@ -58,5 +58,23 @@ for(count=1;count<=10;count=count+1)
 }
 //'dom' document object model
 var p=document.getElementById("one")
-console.log(p.textContent="bye")
-p.textContent="bye World"
+console.log(p.textContent)
+
+
+function change()
+{
+    p.textContent="Bye World"
+}
+
+var num1=document.getElementById("num1")
+var num2=document.getElementById("num2")
+var result=document.getElementById("result")
+total=0
+
+
+function add()
+{
+    result.textContent=total
+    num1.value
+}
+
