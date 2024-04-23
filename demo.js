@@ -1,4 +1,4 @@
-function add(a,b)
+/*function add(a,b)
 {
     console.log(a+b)
 
@@ -65,16 +65,70 @@ function change()
 {
     p.textContent="Bye World"
 }
-
-var num1=document.getElementById("num1")
-var num2=document.getElementById("num2")
+//addition
+var box1=document.getElementById("num1")
+var box2=document.getElementById("num2")
 var result=document.getElementById("result")
-total=0
 
 
-function add()
+
+function addd()
 {
+    var box1value=Number(box1.value)
+var box2value=Number(box2.value)
+var total=box1value+box2value 
     result.textContent=total
-    num1.value
+}
+//math random number
+var gameresult=document.getElementById("gameresult")
+var score=document.getElementById("score")
+var totalscore=10
+var guessnumber=document.getElementById("guessnumber")
+var randomnumber=Math.floor(Math.random()*10)+1
+
+
+function check()
+{
+    var enternumber=guessnumber.value
+    if(randomnumber==enternumber)
+    {
+        
+        console.log("You are Right")
+        gameresult.textContent="Right"
+        alert("You Won.....")
+    }
+    else{
+        totalscore=totalscore-1
+        score.textContent="score : "+totalscore
+        gameresult.textContent="Wrong"
+    }
+    
 }
 
+var box=document.getElementById("box")
+
+function change()
+{
+    box.setAttribute("class","withdmax")
+    
+}
+
+var inputbox=document.getElementById("inputbox")
+var result=document.getElementById("result")
+
+function print()
+{
+    result.textContent=inputbox.value
+    
+}
+*/
+
+var result=document.getElementById("result")
+
+function update()
+{
+    var listitem=document.createElement("h1")
+    listitem.textContent="Hello"
+    result.append(listitem)
+    
+}
